@@ -1,9 +1,24 @@
-<!-- index.wxml -->
-<!--搜索框-->
-<view class="search-container">
-    <view class="search-box">
-        <icon class="fas fa-search" type="search" size="22"></icon>
-        <input type="text" placeholder="请输入关键词" />
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="userinfo">
+      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        </button>
+        <view class="nickname-wrapper">
+          <text class="nickname-label">昵称</text>
+          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
+        </view>
+      </block>
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
     </view>
 </view>
 <!--轮播图-->
@@ -46,58 +61,8 @@
     <view class="text-container">
       <view class="star-container"><text >★</text></view>
       <view class="title-container"><text>资源分类</text></view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
     </view>
-    <view class="line"></view>
-    <view class="divider"></view> <!-- 灰色线条 -->
-</view>
-
-<!--农耕体验等-->
-<view class="nav">
-    <view 
-        class="nav-item {{selected === '自然教育' ? 'selected' : ''}}" 
-        data-item="自然教育" 
-        bindtap="selectNav" 
-        hover-class="hover"
-    >自然教育</view>
-    <view 
-        class="nav-item {{selected === '农耕体验' ? 'selected' : ''}}" 
-        data-item="农耕体验" 
-        bindtap="selectNav" 
-        hover-class="hover"
-    >农耕体验</view>
-    <view 
-        class="nav-item {{selected === '文旅振兴' ? 'selected' : ''}}" 
-        data-item="文旅振兴" 
-        bindtap="selectNav" 
-        hover-class="hover"
-    >文旅振兴</view>
-    <view 
-        class="nav-item {{selected === '红色教育' ? 'selected' : ''}}" 
-        data-item="红色教育" 
-        bindtap="selectNav" 
-        hover-class="hover"
-    >红色教育</view>
-</view>
-<view class="images">
-    <block wx:for="{{images}}" wx:key="index">
-        <navigator url="/pages/logs/logs">
-            <image class="image-placeholder" src="{{item}}" mode="aspectFill"></image>
-        </navigator>
-    </block>
-</view>
-
-<!--往期活动-->
-<view class="activity">
-    <block wx:for="{{activities}}" wx:key="index">
-        <view class="activity-item">
-            <view class="activity-header">
-                <text class="activity-title">{{item.title}}</text>
-                <text class="activity-info">{{item.time}}</text>
-                <text class="activity-info">{{item.reads}}</text>
-            </view>
-            <navigator url="/pages/logs/logs">
-                <image class="activity-image" src="{{item.image}}"></image>
-            </navigator>
-        </view>
-    </block>
-</view>
+  </view>
+</scroll-view>
