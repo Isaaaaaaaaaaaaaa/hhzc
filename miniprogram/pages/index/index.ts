@@ -20,13 +20,13 @@ Page({
             title: '往期活动1',
             time: '24小时前',
             reads: '658阅读',
-            image: '/images/user.png'
+            image: ''
         },
         {
             title: '往期活动2',
             time: '24小时前',
             reads: '658阅读',
-            image: '/images/user.png'
+            image: ''
         }
     ]
   },

@@ -1,4 +1,4 @@
-<!--logs.wxml-->
+<!--farmEX.wxml-->
 <!--搜索框-->
 <view class="search-bar">
   <view class="search-container">

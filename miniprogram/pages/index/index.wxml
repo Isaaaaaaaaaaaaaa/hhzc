@@ -11,10 +11,10 @@
 <view class="lbt-container">
   <swiper class="lbt-swiper" indicator-dots="true" autoplay="true" interval="3000" circular="true">
     <swiper-item>
-      <image src="/images/user.png" class="slide-image img1" />
+      <image src="" class="slide-image img1" />
     </swiper-item>
     <swiper-item>
-      <image src="/images/user.png" class="slide-image img2" />
+      <image src="" class="slide-image img2" />
     </swiper-item>
   </swiper>
 </view>
@@ -80,7 +80,7 @@
 </view>
 <view class="images">
     <block wx:for="{{images}}" wx:key="index">
-        <navigator url="/pages/logs/logs">
+        <navigator url="/pages/farmEX/farmEX">
             <image class="image-placeholder" src="{{item}}" mode="aspectFill"></image>
         </navigator>
     </block>
@@ -95,7 +95,7 @@
                 <text class="activity-info">{{item.time}}</text>
                 <text class="activity-info">{{item.reads}}</text>
             </view>
-            <navigator url="/pages/logs/logs">
+            <navigator url="/pages/farmEX/farmEX">
                 <image class="activity-image" src="{{item.image}}"></image>
             </navigator>
         </view>

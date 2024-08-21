@@ -1,10 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/farmEX/farmEX",
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
     "pages/logs/logs"
+    
+
   ],
   "tabBar": {
     "color": "#999999",
