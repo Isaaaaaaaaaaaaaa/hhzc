@@ -11,10 +11,10 @@
 <view class="lbt-container">
   <swiper class="lbt-swiper" indicator-dots="true" autoplay="true" interval="3000" circular="true">
     <swiper-item>
-      <image src="" class="slide-image img1" />
+      <image src="/images/user.png" class="slide-image img1" />
     </swiper-item>
     <swiper-item>
-      <image src="" class="slide-image img2" />
+      <image src="/images/user.png" class="slide-image img2" />
     </swiper-item>
   </swiper>
 </view>
