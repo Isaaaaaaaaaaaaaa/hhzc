@@ -1,14 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/farmingExp/farmingExp",
+    "pages/farmEX/farmEX",
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
     "pages/logs/logs"
+    
+
   ],
   "tabBar": {
-    "selectedColor":"#33a3dc", 
+    "color": "#999999",
+    "selectedColor":"#006400", 
     "list": [
       {
         "pagePath": "pages/index/index",

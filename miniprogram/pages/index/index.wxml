@@ -1,27 +1,103 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
+<!-- index.wxml -->
+<!--搜索框-->
+<view class="search-container">
+    <view class="search-box">
+        <icon class="fas fa-search" type="search" size="22"></icon>
+        <input type="text" placeholder="请输入关键词" />
     </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
+</view>
+<!--轮播图-->
+
+<view class="lbt-container">
+  <swiper class="lbt-swiper" indicator-dots="true" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image src="" class="slide-image img1" />
+    </swiper-item>
+    <swiper-item>
+      <image src="" class="slide-image img2" />
+    </swiper-item>
+  </swiper>
+</view>
+
+<!--十个小窗口-->
+<view class="xck-container">
+  <view class="grid">
+    <block wx:for="{{items}}" wx:key="index">
+      <navigator url="{{item.url}}" class="grid-item">
+        <image src="{{item.image}}" class="grid-image"/>
+        <text class="grid-text">{{item.text}}</text>
+      </navigator>
+    </block>
   </view>
-</scroll-view>
+</view>
+<!--分界线-->
+<view class="divider"></view> <!-- 灰色线条 -->
+
+<!--公告-->
+<view class="announcement">
+  <view class="announcement-title">平台公告</view>
+  <view class="announcement-content">
+    · 恭喜【 <text class="company-name" id="company-name">有限公司</text> 】成功入驻
+  </view>
+</view>
+
+<!--资源分类-->
+<view class="resource-category">
+    <view class="text-container">
+      <view class="star-container"><text >★</text></view>
+      <view class="title-container"><text>资源分类</text></view>
+    </view>
+    <view class="line"></view>
+    <view class="divider"></view> <!-- 灰色线条 -->
+</view>
+
+<!--农耕体验等-->
+<view class="nav">
+    <view 
+        class="nav-item {{selected === '自然教育' ? 'selected' : ''}}" 
+        data-item="自然教育" 
+        bindtap="selectNav" 
+        hover-class="hover"
+    >自然教育</view>
+    <view 
+        class="nav-item {{selected === '农耕体验' ? 'selected' : ''}}" 
+        data-item="农耕体验" 
+        bindtap="selectNav" 
+        hover-class="hover"
+    >农耕体验</view>
+    <view 
+        class="nav-item {{selected === '文旅振兴' ? 'selected' : ''}}" 
+        data-item="文旅振兴" 
+        bindtap="selectNav" 
+        hover-class="hover"
+    >文旅振兴</view>
+    <view 
+        class="nav-item {{selected === '红色教育' ? 'selected' : ''}}" 
+        data-item="红色教育" 
+        bindtap="selectNav" 
+        hover-class="hover"
+    >红色教育</view>
+</view>
+<view class="images">
+    <block wx:for="{{images}}" wx:key="index">
+        <navigator url="/pages/farmEX/farmEX">
+            <image class="image-placeholder" src="{{item}}" mode="aspectFill"></image>
+        </navigator>
+    </block>
+</view>
+
+<!--往期活动-->
+<view class="activity">
+    <block wx:for="{{activities}}" wx:key="index">
+        <view class="activity-item">
+            <view class="activity-header">
+                <text class="activity-title">{{item.title}}</text>
+                <text class="activity-info">{{item.time}}</text>
+                <text class="activity-info">{{item.reads}}</text>
+            </view>
+            <navigator url="/pages/farmEX/farmEX">
+                <image class="activity-image" src="{{item.image}}"></image>
+            </navigator>
+        </view>
+    </block>
+</view>
