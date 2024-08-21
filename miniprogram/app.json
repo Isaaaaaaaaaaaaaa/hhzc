@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/farmingExp/farmingExp",
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
