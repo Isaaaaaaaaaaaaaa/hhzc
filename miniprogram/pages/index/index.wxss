@@ -1,62 +1,221 @@
-/**index.wxss**/
 page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.scrollarea {
+/*搜索框*/
+.search-container {
+  display: flex;
+  justify-content: center;
+  background-color: #006400;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 60rpx;
+  padding: 10rpx ;
+  margin-bottom:16rpx;
+  width: 60%;
+  max-width: 1200rpx;
+}
+.search-box input {
+  border: none;
+  outline: none;
   flex: 1;
-  overflow-y: hidden;
+  border-radius: 60rpx;
+  background-color: transparent; /* 确保输入框背景透明 */
 }
 
-.userinfo {
+.icon {
+  font-size: 40rpx;
+  color: gray;
+}
+
+/*轮播图*/
+
+.lbt-container {
+  width: 100%;
+  height: 300rpx; /* 设置轮播图高度 */
+}
+
+.lbt-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例 */
+}
+
+.img1{
+  background-color: coral;
+}
+.img2{
+  background-color: cornflowerblue;
+}
+/*十个小窗口*/
+.xck-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #aaa;
-  width: 80%;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.avatar-wrapper {
-  padding: 0;
-  width: 56px !important;
-  border-radius: 8px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.avatar {
-  display: block;
-  width: 56px;
-  height: 56px;
-}
-
-.nickname-wrapper {
+.grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+
+.grid-item {
+  width: 14%;
+  text-align: center;
+  text-decoration: none;
+  margin-left:10rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+
+.grid-image {
   width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-top: .5px solid rgba(0, 0, 0, 0.1);
-  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
-  color: black;
+  height: 90rpx;
+  border-radius:32rpx ;
+  background-color: #ddd; /* Placeholder color */
 }
 
-.nickname-label {
-  width: 105px;
+.grid-text {
+  margin-bottom: 10rpx;
+  color: #333;
+  font-size: 24rpx;
+  font-weight: bolder;
 }
 
-.nickname-input {
+/*分界线*/
+.divider {
+  width: 100%;      /* 占满父容器宽度 */
+  height: 26rpx;      /* 设定线条高度 */
+  background-color: rgb(214, 206, 206); /* 灰色 */
+}
+/*公告*/
+.announcement {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.announcement-title {
+  background-color: #006400;
+  font-size: 26rpx;
+  font-weight: bolder;
+  color: white;
+  padding: 12rpx 16rpx;
+  border-radius: 16rpx;
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+}
+
+.announcement-content {
   flex: 1;
+  font-size: 26rpx;
+  font-weight: bolder;
+}
+.company-name{
+  color:#006400;
+  font-weight: bolder;
+}
+
+/*资源分类*/
+.resource-category {
+  background-color: rgb(214, 206, 206);
+}
+.text-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.star-container{
+  color:#006400;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 40rpx;
+}
+.title-container{
+  font-weight: bolder;
+  font-size: 24rpx;
+}
+.line {
+  height: 4rpx;
+  background-color: rgb(185, 180, 180);
+  width: 75%;
+  margin: 0 auto; /*左右自动居中 */
+}
+
+/*农耕体验*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 26rpx;
+  font-size: 24rpx;
+  font-weight: bolder;
+}
+
+.nav-item {
+  color: gray; /* 默认颜色 */
+  padding: 5px 10px;
+  position: relative; /* 为下划线定位 */
+}
+
+.hover {
+  color: #006400; /* 悬浮时的字体颜色 */
+}
+
+.selected{
+  color:#006400;
+}
+.images {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.image-placeholder {
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #e0e0e0;
+}
+
+/*往期活动*/
+.activity {
+  padding: 60rpx;
+}
+
+.activity-item {
+  margin-bottom: 60rpx;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.activity-title {
+  font-size: 30rpx;
+  color: #006400;
+  font-weight: bold;
+}
+
+.activity-info {
+  font-size: 24rpx;
+  color: gray;
+}
+
+.activity-image {
+  width: 100%;
+  height: 300rpx;
+  object-fit: cover;
+  background-color: #e0e0e0;
 }

@@ -1,4 +1,7 @@
 {
+  "navigationBarTitleText": "农耕体验",
+  "navigationBarBackgroundColor": "#006400",
+  "navigationBarTextStyle": "white",
   "usingComponents": {
   }
 }
