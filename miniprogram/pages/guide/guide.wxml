@@ -1,2 +1,29 @@
-<!--pages/guide/guide.wxml-->
-<text>pages/guide/guide.wxml</text>
+<view class="container">
+  <!-- Search Bar -->
+  <view class="search-bar">
+    <button class="search-button" bindtap="onSearch">查找</button>
+    <input class="search-input" placeholder="内容" bindinput="onSearchInput" />
+  </view>
+
+  <!-- Carousel -->
+  <swiper class="carousel" autoplay="true" indicator-dots="true" interval="3000">
+    <block wx:for="{{carouselItems}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- Recommended Spots -->
+  <view class="recommended-section">
+    <text class="section-title">首要推荐风景区轮播</text>
+    <view class="grid">
+      <block wx:for="{{recommendedSpots}}" wx:key="id">
+        <view class="grid-item">
+          <image class="spot-image" src="{{item.image}}" mode="aspectFill"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
