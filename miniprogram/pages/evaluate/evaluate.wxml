@@ -1,0 +1,12 @@
+<view class="evaluate-header">
+  <image class="logo" src="../../images/evaluate.png" alt="Logo"/>
+  <text class="title">评价</text>
+</view>
+
+<view class="content">
+  <view class="comment-box-container">
+    <image class="icon-mail" src="../../images/mail.png" alt="Mail Icon"/>
+    <textarea class="comment-box" placeholder="请在此输入您的评价"></textarea>
+  </view>
+  <button class="submit-button" bindtap="handleSubmit">提交</button>
+</view>

@@ -14,19 +14,21 @@
   <view class="menu">
     <!-- 我的行程 -->
     <navigator class="menu-item" url="/pages/trip/trip" open-type="navigate">
+      <image src="../../images/trip.png" class="menu-logo"></image>
       <text class="menu-text">我的行程</text>
-      <!-- 右箭头图标 -->
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
     <!-- 我的发布 -->
     <navigator class="menu-item" url="/pages/post/post" open-type="navigate">
+      <image src="../../images/post_logo.png" class="menu-logo"></image>
       <text class="menu-text">我的发布</text>
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
     <!-- 联系客服 -->
     <navigator class="menu-item" url="/pages/contact/contact" open-type="navigate">
+      <image src="../../images/contact_logo.png" class="menu-logo"></image>
       <text class="menu-text">联系客服</text>
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
   </view>
 </view>
