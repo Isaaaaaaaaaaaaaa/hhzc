@@ -63,14 +63,19 @@
   border-bottom: 5rpx solid #eeeeee; /* 底部边框，分隔线 */
 }
 
+.menu-logo {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx; /* Logo与文本的间距 */
+}
 /* 菜单文本 */
 .menu-text {
   font-size: 32rpx; /* 字体大小 */
   color: #333333; /* 深灰色字体颜色 */
+  flex-grow: 1; /* 文本占据剩余空间 */
 }
-
 /* 右箭头图标 */
 .menu-icon {
-  width: 20rpx;
-  height: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
 }

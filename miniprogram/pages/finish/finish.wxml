@@ -1,0 +1,20 @@
+<view class="finish-container">
+  <view class="finish-header">
+    <image src="../../images/finish.png" class="header-logo"></image>
+    <text class="header-title">已完成</text>
+  </view>
+
+  <view class="trip-card">
+    <view class="trip-info">
+      <image src="../../images/go-date.png" class="date-icon"></image>
+      <view class="trip-date-picker">
+        <picker mode="date" class="trip-date">
+          <text>出行日期</text>
+        </picker>
+        <image src="../../images/arrow_down.png" class="arrow-icon"></image>
+      </view>
+      <text class="trip-details">显示出行人数</text>
+      <text class="trip-details">显示出行地</text>
+    </view>
+  </view>
+</view>
