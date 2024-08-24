@@ -11,16 +11,16 @@ Page({
     items1: [
       { url: '/pages/find/find', image: '/images/1.png', text: '民宿预约' },
       { url: '/pages/find/find', image: '/images/2.png', text: '乡村美景' },
-      { url: '/pages/find/find', image: '/images/3.png', text: '乡村美食' },
+      { url: '/pages/resv/resv', image: '/images/3.png', text: '行程预约' },
       { url: '/pages/find/find', image: '/images/4.png', text: '农品销售' },
       { url: '/pages/find/find', image: '/images/5.png', text: '研学机构' }
     ] as { url: string; image: string; text: string }[],
     items2: [
       { url: '/pages/find/find', image: '/images/6.png', text: '游玩攻略' },
-      { url: '/pages/find/find', image: '/images/7.png', text: '会议登记' },
+      { url: '/pages/find/find', image: '/images/3.png', text: '----' },
       { url: '/pages/find/find', image: '/images/8.png', text: '精品采摘' },
-      { url: '/pages/find/find', image: '/images/9.png', text: '休闲垂钓' },
-      { url: '/pages/find/find', image: '/images/10.png', text: '招商' }
+      { url: '/pages/find/find', image: '/images/9.png', text: '----' },
+      { url: '/pages/find/find', image: '/images/10.png', text: '----' }
     ] as { url: string; image: string; text: string }[],
 
 
@@ -39,9 +39,9 @@ Page({
 
   changeCompanyName() {
     const companyNames = [
-      'ABC有限公司',
-      'XYZ股份有限公司',
-      '123科技有限公司'
+      '北京林业大学',
+      '华东理工大学',
+      '南京师范大学'
     ];
     this.setData({
       companyName: companyNames[0]

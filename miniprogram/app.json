@@ -5,9 +5,8 @@
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
-    "pages/logs/logs"
-    
-
+    "pages/logs/logs",
+    "pages/resv/resv"
   ],
   "tabBar": {
     "color": "#999999",
