@@ -7,22 +7,34 @@ Page({
   data: {
 
   },
+  
+  navigateToScenicInfo(): void {
+    wx.navigateTo({
+      url: '/pages/scenic-info/scenic-info'
+    });
+  },
+
+  //下方按钮
+  saveInformation: function() {
+    wx.showToast({
+      title: '保存成功！',
+      icon: 'success',
+      duration: 2000
+    })
+  },
 
   makeReservation: function() {
-    // 一.显示“预约成功！”的提示
     wx.showToast({
       title: '预约成功！',
       icon: 'success',
       duration: 2000
     })
   
-    // 二.刷新页面
     setTimeout(function() {
-      // 这里使用微信小程序的API重新加载当前页面
       wx.reLaunch({
-        url: '/pages/resv/resv' // 将此处替换为当前页面的路径
+        url: '/pages/resv/resv'
       })
-    }, 2000); // 提示显示2秒后刷新页面
+    }, 2000);
   },
 
   /**

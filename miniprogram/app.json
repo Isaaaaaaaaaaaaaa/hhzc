@@ -6,7 +6,8 @@
     "pages/find/find",
     "pages/my/my",
     "pages/logs/logs",
-    "pages/resv/resv"
+    "pages/resv/resv",
+    "pages/scenic-info/scenic-info"
   ],
   "tabBar": {
     "color": "#999999",

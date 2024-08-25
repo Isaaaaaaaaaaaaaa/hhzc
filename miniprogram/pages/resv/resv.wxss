@@ -1,79 +1,80 @@
 /* pages/resv/resv.wxss */
+/*当前选择*/
+.address-display {
+  background-color: #e9f5e9; 
+  text-align: center;
+  padding:30rpx 0;
+  font-family: "KaiTi"; /* 楷体 */
+  font-size: 32rpx;
+  font-weight: bolder;
+  color:grey;
+}
+
+
+/*图片*/
 .resv-img{
   display: flex;
   width:100%;
-  height: 300rpx;
   justify-content: center;
-  overflow: hidden;
 }
 
 .resv-img image{
   width:100%;
 }
 
-.reserve-contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120rpx;
-  background-color: #f5f5f5;
-}
 
-.res-item {
-  font-size: 28rpx; /* 根据需要调整字体大小 */
-  text-align: center;
-}
-
+/*开始预约*/
 .reserve {
+  background-color: #e9f5e9;
   display: flex;
   flex-direction: column;
+  border-bottom: 6rpx solid #ccc;
 }
 
 .picker {
-  width: 40%;
-  margin:40rpx auto;
-  border: 2rpx solid #ddd;
-  border-radius: 5px;
+  width: 84%;
   padding: 0 20rpx;
   height: 70rpx;
   line-height: 70rpx;
+  margin:20rpx auto;
+  background-color: white;
+  border-radius: 20rpx;
+  position: relative;
 }
 
 .picker-input {
-  width: 100%;
-  border: none;
-  outline: none;
   height: 100%;
+  width:100%;
   line-height: 70rpx;
   color: #999;
   font-size: 32rpx;
+  border: none;
+  outline: none;
+}
+.icon-dropdown {
+  position: absolute;
+  right: 40rpx;
+  top:40%;
+  width: 50rpx;
+  height: 50rpx;
+  transform: translateY(-50%);
 }
 
-.options {
+/*按钮*/
+.button-container {
+  background-color:#e9f5e9;
   display: flex;
-  flex-direction: column;
+  padding: 20rpx 40rpx;
 }
 
-.checkbox-group {
-  width: 100%;
+.button-container button{
+  width:40%;
+}
+.save-button {
+  background-color: white;
+  border-radius: 10rpx;
 }
 
-.checkbox-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 40rpx auto;
-}
-
-.checkbox-item {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-contain {
-  display: flex;
-  padding-right: 16px;
-  width: 100%;
-  justify-content: flex-end;
+.submit-button {
+  border-radius: 10rpx;
 }
