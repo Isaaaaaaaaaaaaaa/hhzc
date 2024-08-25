@@ -9,25 +9,25 @@ interface Activity {
 Page({
   data: {
     items1: [
-      { url: '/pages/find/find', image: '/images/1.png', text: '民宿预约' },
-      { url: '/pages/find/find', image: '/images/2.png', text: '乡村美景' },
+      { url: '/pages/find/find', image: '/images/1.png', text: '乡村美景' },
+      { url: '/pages/find/find', image: '/images/2.png', text: '乡村美食' },
       { url: '/pages/resv/resv', image: '/images/3.png', text: '行程预约' },
       { url: '/pages/find/find', image: '/images/4.png', text: '农品销售' },
       { url: '/pages/find/find', image: '/images/5.png', text: '研学机构' }
     ] as { url: string; image: string; text: string }[],
     items2: [
       { url: '/pages/find/find', image: '/images/6.png', text: '游玩攻略' },
-      { url: '/pages/find/find', image: '/images/3.png', text: '----' },
+      { url: '/pages/find/find', image: '/images/7.png', text: '会议登记' },
       { url: '/pages/find/find', image: '/images/8.png', text: '精品采摘' },
-      { url: '/pages/find/find', image: '/images/9.png', text: '----' },
-      { url: '/pages/find/find', image: '/images/10.png', text: '----' }
+      { url: '/pages/find/find', image: '/images/9.png', text: '文化活动' },
+      { url: '/pages/find/find', image: '/images/10.png', text: '民宿预约' }
     ] as { url: string; image: string; text: string }[],
 
 
     companyName: '',
 
     selected: '农耕体验',
-    images: ['/images/4.png', '/images/4.png', '/images/4.png'],
+    images: ['/images/fl2.png', '/images/fl2.png', '/images/fl2.png'],
     
     activities: [] as Activity[] // 指定类型
   },
@@ -60,10 +60,10 @@ Page({
   selectNav(event: WechatMiniprogram.TouchEvent) {
       const item = event.currentTarget.dataset.item;
       const imageData: { [key: string]: string[] } = {
-          '自然教育': ['/images/5.png', '/images/5.png', '/images/5.png'],
-          '农耕体验': ['/images/4.png', '/images/4.png', '/images/4.png'],
-          '文旅振兴': ['/images/7.png', '/images/7.png', '/images/7.png'],
-          '红色教育': ['/images/10.png', '/images/10.png', '/images/10.png']
+          '自然教育': ['/images/fl1.png', '/images/fl1.png', '/images/fl1.png'],
+          '农耕体验': ['/images/fl2.png', '/images/fl2.png', '/images/fl2.png'],
+          '文旅振兴': ['/images/fl3.png', '/images/fl3.png', '/images/fl3.png'],
+          '红色教育': ['/images/fl4.png', '/images/fl4.png', '/images/fl4.png']
       };
 
       this.setData({
