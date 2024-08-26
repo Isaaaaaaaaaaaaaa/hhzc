@@ -5,6 +5,8 @@
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
+    "pages/resv/resv",
+    "pages/scenic-info/scenic-info"
     "pages/post/post",
     "pages/trip/trip",
     "pages/contact/contact",
@@ -12,7 +14,6 @@
     "pages/ready/ready",
     "pages/finish/finish",
     "pages/logs/logs"
-    
 
   ],
   "tabBar": {

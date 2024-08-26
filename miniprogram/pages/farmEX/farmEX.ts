@@ -2,7 +2,7 @@
 
 Page({
   data: {
-    tabs: ['区域介绍', '区域剪影', '行程预约', '在线客服'],
+    tabs: ['区域介绍', '区域剪影'],
     currentIndex: 0
   },
 
@@ -17,24 +17,6 @@ Page({
     const index = e.currentTarget.dataset.index; // 获取被点击项的索引
     this.setData({
       currentIndex: index // 更新当前选中索引
-    });
-  },
-
-  // 创建预约
-  makeReservation() {
-    wx.showToast({
-      title: '预约成功！',
-      icon: 'success',
-      duration: 2000
-    });
-  },
-
-  // 发送消息
-  sendMessage() {
-    wx.showToast({
-      title: '发送成功！',
-      icon: 'success',
-      duration: 2000
     });
   }
 });

@@ -1,0 +1,36 @@
+<!--pages/resv/resv.wxml-->
+<view class="address-display" bindtap="navigateToScenicInfo">
+  <text>点击查看景点信息</text>
+</view>
+
+<!--图片-->
+<view class="resv-img"> 
+  <image src="/images/reserve.png"/>
+</view>
+
+
+<view class="reserve">
+  <view class="picker">
+    <input class="picker-input" placeholder="请输入预约团队" />
+  </view>
+  <view class="picker">
+    <input class="picker-input" placeholder="请输入预约人数" />
+  </view>
+  <view class="picker">
+    <input class="picker-input" placeholder="请输入活动类型" />
+  </view>
+  <view class="picker">
+    <input class="picker-input" placeholder="预约日期" />
+    <image class="icon-dropdown" src="/images/pulldown.png" />
+  </view>
+  <view class="picker">
+    <input class="picker-input" placeholder="预约景点" />
+    <image class="icon-dropdown" src="/images/pulldown.png" />
+  </view>
+</view>
+
+<!--按钮-->
+<view class="button-container">
+  <button bindtap="saveInformation" class="save-button">保存信息</button>
+  <button bindtap="makeReservation" type="primary" class="submit-button">提交预约</button>
+</view>

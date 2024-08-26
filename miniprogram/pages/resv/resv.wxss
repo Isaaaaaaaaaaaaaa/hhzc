@@ -1,0 +1,80 @@
+/* pages/resv/resv.wxss */
+/*当前选择*/
+.address-display {
+  background-color: #e9f5e9; 
+  text-align: center;
+  padding:30rpx 0;
+  font-family: "KaiTi"; /* 楷体 */
+  font-size: 32rpx;
+  font-weight: bolder;
+  color:grey;
+}
+
+
+/*图片*/
+.resv-img{
+  display: flex;
+  width:100%;
+  justify-content: center;
+}
+
+.resv-img image{
+  width:100%;
+}
+
+
+/*开始预约*/
+.reserve {
+  background-color: #e9f5e9;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 6rpx solid #ccc;
+}
+
+.picker {
+  width: 84%;
+  padding: 0 20rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin:20rpx auto;
+  background-color: white;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.picker-input {
+  height: 100%;
+  width:100%;
+  line-height: 70rpx;
+  color: #999;
+  font-size: 32rpx;
+  border: none;
+  outline: none;
+}
+.icon-dropdown {
+  position: absolute;
+  right: 40rpx;
+  top:40%;
+  width: 50rpx;
+  height: 50rpx;
+  transform: translateY(-50%);
+}
+
+/*按钮*/
+.button-container {
+  background-color:#e9f5e9;
+  display: flex;
+  padding: 20rpx 40rpx;
+}
+
+.button-container button{
+  width:40%;
+}
+.save-button {
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.submit-button {
+  border-radius: 10rpx;
+}

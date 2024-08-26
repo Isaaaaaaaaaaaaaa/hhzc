@@ -50,7 +50,7 @@
 <view class="announcement">
   <view class="announcement-title">平台公告</view>
   <view class="announcement-content">
-    · 恭喜【 <text class="company-name" id="company-name">{{companyName}}</text> 】成功入驻
+    · 欢迎【 <text class="company-name" id="company-name">{{companyName}}</text> 】莅临参观
   </view>
 </view>
 
