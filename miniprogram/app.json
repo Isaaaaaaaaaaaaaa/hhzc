@@ -5,9 +5,16 @@
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
-    "pages/logs/logs",
     "pages/resv/resv",
     "pages/scenic-info/scenic-info"
+    "pages/post/post",
+    "pages/trip/trip",
+    "pages/contact/contact",
+    "pages/evaluate/evaluate",
+    "pages/ready/ready",
+    "pages/finish/finish",
+    "pages/logs/logs"
+
   ],
   "tabBar": {
     "color": "#999999",

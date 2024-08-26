@@ -1,2 +1,34 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container" style="width: 750rpx; height: 103rpx; display: flex; box-sizing: border-box">
+  <!-- 用户头像和登录提示 -->
+  <view class="profile">
+    <!-- 头像占位容器 -->
+    <view class="avatar-box">
+      <!-- 头像图片 -->
+      <image src="../../images/user.png" class="avatar" mode="aspectFill"></image>
+    </view>
+    <!-- 登录提示文本 -->
+    <text class="login-text">点击登录</text>
+  </view>
+
+  <!-- 菜单项 -->
+  <view class="menu">
+    <!-- 我的行程 -->
+    <navigator class="menu-item" url="/pages/trip/trip" open-type="navigate">
+      <image src="../../images/trip.png" class="menu-logo"></image>
+      <text class="menu-text">我的行程</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
+    </navigator>
+    <!-- 我的发布 -->
+    <navigator class="menu-item" url="/pages/post/post" open-type="navigate">
+      <image src="../../images/post_logo.png" class="menu-logo"></image>
+      <text class="menu-text">我的发布</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
+    </navigator>
+    <!-- 联系客服 -->
+    <navigator class="menu-item" url="/pages/contact/contact" open-type="navigate">
+      <image src="../../images/contact_logo.png" class="menu-logo"></image>
+      <text class="menu-text">联系客服</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
+    </navigator>
+  </view>
+</view>

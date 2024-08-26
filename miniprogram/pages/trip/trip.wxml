@@ -1,0 +1,25 @@
+<view class="trip-container">
+  <view class="trip-header">
+    <image src="../../images/trip.png" 
+    class="trip-logo"></image>
+    <text class="header-title">我的行程</text>
+  </view>
+
+  <view class="trip-options">
+    <!-- 待出行 -->
+    <navigator url="/pages/ready/ready" open-type="navigate" class="trip-option">
+      <image src="../../images/ready.png" class="trip-icon"></image>
+      <text class="trip-text">待出行</text>
+    </navigator>
+    <!-- 已完成 -->
+    <navigator url="/pages/finish/finish" open-type="navigate" class="trip-option">
+      <image src="../../images/finish.png" class="trip-icon"></image>
+      <text class="trip-text">已完成</text>
+    </navigator>
+    <!-- 去评价 -->
+    <navigator url="/pages/evaluate/evaluate" open-type="navigate" class="trip-option">
+      <image src="../../images/evaluate.png" class="trip-icon"></image>
+      <text class="trip-text">去评价</text>
+    </navigator>
+  </view>
+</view>
