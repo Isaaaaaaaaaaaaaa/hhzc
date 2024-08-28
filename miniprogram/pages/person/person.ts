@@ -1,4 +1,4 @@
-// pages/post/post.ts
+// pages/person/person.ts
 Page({
 
   /**
