@@ -15,7 +15,6 @@
 .resv-img{
   display: flex;
   width:100%;
-  justify-content: center;
 }
 
 .resv-img image{
@@ -34,9 +33,9 @@
 .picker {
   width: 84%;
   padding: 0 20rpx;
-  height: 70rpx;
-  line-height: 70rpx;
-  margin:20rpx auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin:30rpx auto;
   background-color: white;
   border-radius: 20rpx;
   position: relative;
@@ -45,12 +44,13 @@
 .picker-input {
   height: 100%;
   width:100%;
-  line-height: 70rpx;
-  color: #999;
+  color: grey;
   font-size: 32rpx;
   border: none;
   outline: none;
 }
+
+
 .icon-dropdown {
   position: absolute;
   right: 40rpx;
@@ -59,6 +59,64 @@
   height: 50rpx;
   transform: translateY(-50%);
 }
+
+/*显示栏按钮*/
+.picker-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx;
+}
+.cancel-button,.confirm-button {
+  width: 48%;
+  margin: 0;
+}
+.picker-buttons button{
+  border: none;
+}
+.confirm button{
+  color:green;
+}
+/*显示栏文字*/
+.scenic-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.scenic-picker-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scenic-picker-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20rpx 40rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  max-height: 70%; 
+  overflow-y: auto;
+}
+
+
+.scenic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx 20rpx 30rpx;
+}
+
+
 
 /*按钮*/
 .button-container {
