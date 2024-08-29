@@ -1,1 +1,78 @@
-/* pages/find/find.wxss */
+.container {
+  padding: 10rpx;
+}
+
+.search-bar {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.search-input {
+  flex: 4;
+  padding: 10rpx;
+  height: 50rpx;
+  font-size: 27rpx;
+  border: 1px solid #ccc;
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+}
+
+.search-button {
+  flex: 1;
+  margin-left: 10rpx;
+  padding: 10rpx;
+  background-color: white;
+  font-weight: 400;
+  font-size: 27rpx;
+  line-height: 50rpx;
+  border: 1px solid #ccc;
+  border-radius: 0 50rpx 50rpx 0rpx;
+}
+
+.history-section {
+  margin-bottom: 20rpx;
+}
+
+.history-header {
+  display: flex;
+  justify-content:flex-end;
+  width: 700rpx;
+  line-height: 100rpx;
+  margin-bottom: 10rpx;
+}
+
+.history-footer{
+  margin-top: 40rpx;
+}
+
+.history-list{
+  display:flex;
+}
+
+.history-item {
+  background-color: rgb(233, 233, 233);
+  width: 150rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin-right: 30rpx;
+  height: 70rpx;
+  border-radius: 20rpx;
+}
+
+.clear-button {
+  background-color: transparent;
+  margin-top:3%;
+  width: 100rpx;
+  left: 30%;
+  color: #ccc;
+  border: none;
+}
+
+.map-section {
+  margin-top: 0rpx;
+  width: 98%;
+  margin-left: 2%;
+  height: 900rpx;
+}

@@ -1,0 +1,20 @@
+<view class="ready-container">
+  <view class="ready-header">
+    <image src="../../images/ready.png" class="header-logo"></image>
+    <text class="header-title">待出行</text>
+  </view>
+
+  <view class="trip-card">
+    <view class="trip-info">
+      <image src="../../images/order-date.png" class="date-icon"></image>
+      <view class="trip-date-picker">
+        <picker mode="date" class="trip-date">
+          <text>预约日期</text>
+        </picker>
+        <image src="../../images/arrow_down.png" class="arrow-icon"></image>
+      </view>
+      <text class="trip-details">显示预约人数</text>
+      <text class="trip-details">显示目的区域</text>
+    </view>
+  </view>
+</view>

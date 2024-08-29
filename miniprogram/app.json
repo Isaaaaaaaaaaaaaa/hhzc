@@ -5,8 +5,12 @@
     "pages/guide/guide",
     "pages/find/find",
     "pages/my/my",
+    "pages/resv/resv",
+    "pages/scenic-info/scenic-info",
+    "pages/ready/ready",
+    "pages/finish/finish",
+    "pages/person/person",
     "pages/logs/logs"
-    
 
   ],
   "tabBar": {
@@ -17,7 +21,7 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/images/index.png",
-        "selectedIconPath": "/images/index.png"
+        "selectedIconPath": "/images/index-active.png"
       },
       {
         "pagePath": "pages/guide/guide",

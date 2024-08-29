@@ -12,21 +12,23 @@
 
   <!-- 菜单项 -->
   <view class="menu">
-    <!-- 我的行程 -->
-    <navigator class="menu-item" url="/pages/trip/trip" open-type="navigate">
-      <text class="menu-text">我的行程</text>
-      <!-- 右箭头图标 -->
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+    <!-- 个人资料 -->
+    <navigator class="menu-item" url="/pages/person/person" open-type="navigate">
+      <image src="../../images/person.png" class="menu-logo"></image>
+      <text class="menu-text">个人资料</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
-    <!-- 我的发布 -->
-    <navigator class="menu-item" url="/pages/post/post" open-type="navigate">
-      <text class="menu-text">我的发布</text>
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+    <!-- 待出行 -->
+    <navigator class="menu-item" url="/pages/ready/ready" open-type="navigate">
+      <image src="../../images/ready.png" class="menu-logo"></image>
+      <text class="menu-text">待出行</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
-    <!-- 联系客服 -->
-    <navigator class="menu-item" url="/pages/contact/contact" open-type="navigate">
-      <text class="menu-text">联系客服</text>
-      <!-- <image src="../../images/arrow_right.png" class="menu-icon"></image> -->
+    <!-- 已完成 -->
+    <navigator class="menu-item" url="/pages/finish/finish" open-type="navigate">
+      <image src="../../images/finish.png" class="menu-logo"></image>
+      <text class="menu-text">已完成</text>
+      <image src="../../images/arrow_right.png" class="menu-icon"></image>
     </navigator>
   </view>
 </view>

@@ -1,0 +1,113 @@
+/* pages/scenic-info/scenic-info.wxss */
+.deco{
+  height: 36rpx;
+  background-color: #e9f5e9;
+}
+
+/*搜索框*/
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding:20rpx 80rpx;
+  box-sizing: border-box;
+}
+
+/* 搜索容器样式 */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200rpx; 
+  height: 70rpx;
+}
+
+/* 搜索图标容器样式 */
+.search-img-container {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-img-container image {
+  width: 40rpx;
+  height: 60%;
+}
+
+.search-input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/*分界线*/
+.deco2{
+  height: 4rpx;
+  background-color: #ccc;
+  margin-bottom: 50rpx;
+}
+
+/*具体内容*/
+.scenic-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.scenic-item {
+  display: flex;
+  align-items: center;
+  padding:0 0 50rpx 50rpx;
+}
+
+.scenic-image {
+  width: 190rpx;
+  height: 190rpx;
+  margin-right: 60rpx;
+  border-radius: 40rpx;
+}
+
+.scenic-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.scenic-name {
+  font-weight: bolder;
+  font-size: 32rpx;
+}
+
+.scenic-location {
+  display: flex;
+  align-items: center;
+  color:grey;
+  font-size: 26rpx;
+  margin: 30rpx 0;
+}
+
+.location-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.rating{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 36rpx;
+  margin-right: 16rpx;
+}
+
+.rating-score {
+  color: grey;
+  font-size: 26rpx;
+}

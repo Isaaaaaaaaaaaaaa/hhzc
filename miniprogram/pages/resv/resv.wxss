@@ -1,0 +1,138 @@
+/* pages/resv/resv.wxss */
+/*当前选择*/
+.address-display {
+  background-color: #e9f5e9; 
+  text-align: center;
+  padding:30rpx 0;
+  font-family: "KaiTi"; /* 楷体 */
+  font-size: 32rpx;
+  font-weight: bolder;
+  color:grey;
+}
+
+
+/*图片*/
+.resv-img{
+  display: flex;
+  width:100%;
+}
+
+.resv-img image{
+  width:100%;
+}
+
+
+/*开始预约*/
+.reserve {
+  background-color: #e9f5e9;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 6rpx solid #ccc;
+}
+
+.picker {
+  width: 84%;
+  padding: 0 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin:30rpx auto;
+  background-color: white;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.picker-input {
+  height: 100%;
+  width:100%;
+  color: grey;
+  font-size: 32rpx;
+  border: none;
+  outline: none;
+}
+
+
+.icon-dropdown {
+  position: absolute;
+  right: 40rpx;
+  top:40%;
+  width: 50rpx;
+  height: 50rpx;
+  transform: translateY(-50%);
+}
+
+/*显示栏按钮*/
+.picker-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx;
+}
+.cancel-button,.confirm-button {
+  width: 48%;
+  margin: 0;
+}
+.picker-buttons button{
+  border: none;
+}
+.confirm button{
+  color:green;
+}
+/*显示栏文字*/
+.scenic-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.scenic-picker-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scenic-picker-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20rpx 40rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  max-height: 70%; 
+  overflow-y: auto;
+}
+
+
+.scenic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx 20rpx 30rpx;
+}
+
+
+
+/*按钮*/
+.button-container {
+  background-color:#e9f5e9;
+  display: flex;
+  padding: 20rpx 40rpx;
+}
+
+.button-container button{
+  width:40%;
+}
+.save-button {
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.submit-button {
+  border-radius: 10rpx;
+}

@@ -6,49 +6,66 @@
         <input type="text" placeholder="请输入关键词" />
     </view>
 </view>
-<!--轮播图-->
 
+<!--轮播图-->
 <view class="lbt-container">
   <swiper class="lbt-swiper" indicator-dots="true" autoplay="true" interval="3000" circular="true">
     <swiper-item>
-      <image src="" class="slide-image img1" />
+      <image src="/images/lbt1.png" class="slide-image"/>
     </swiper-item>
     <swiper-item>
-      <image src="" class="slide-image img2" />
+      <image src="/images/lbt2.png" class="slide-image"/>
     </swiper-item>
   </swiper>
 </view>
 
 <!--十个小窗口-->
 <view class="xck-container">
-  <view class="grid">
-    <block wx:for="{{items}}" wx:key="index">
-      <navigator url="{{item.url}}" class="grid-item">
-        <image src="{{item.image}}" class="grid-image"/>
-        <text class="grid-text">{{item.text}}</text>
-      </navigator>
+  <view class="hang">
+    <block wx:for="{{items1}}" wx:key="uniqueField">
+      <view class="hang-item">
+        <navigator url="{{item.url}}" class="b-color">
+          <image class="hang-image" src="{{item.image}}"/>
+        </navigator>
+        <text class="hang-text">{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="hang">
+    <block wx:for="{{items2}}" wx:key="uniqueField">
+      <view class="hang-item">
+        <navigator url="{{item.url}}" class="b-color">
+          <image class="hang-image" src="{{item.image}}"/>
+        </navigator>
+        <text class="hang-text">{{item.text}}</text>
+      </view>
     </block>
   </view>
 </view>
+
 <!--分界线-->
-<view class="divider"></view> <!-- 灰色线条 -->
+<view class="divider1"></view> <!-- 灰色线条 -->
 
 <!--公告-->
 <view class="announcement">
   <view class="announcement-title">平台公告</view>
   <view class="announcement-content">
-    · 恭喜【 <text class="company-name" id="company-name">有限公司</text> 】成功入驻
+    · 欢迎【 <text class="company-name" id="company-name">{{companyName}}</text> 】莅临参观
   </view>
 </view>
 
 <!--资源分类-->
+
 <view class="resource-category">
-    <view class="text-container">
-      <view class="star-container"><text >★</text></view>
-      <view class="title-container"><text>资源分类</text></view>
+  <view class="text-container">
+    <view class="star-container">
+      <image src="/images/star.png" class="star"/>
     </view>
-    <view class="line"></view>
-    <view class="divider"></view> <!-- 灰色线条 -->
+    <view class="title-container">
+      <text>资源分类</text>
+    </view>
+  </view>
+  <view class="divider2"></view>
 </view>
 
 <!--农耕体验等-->
@@ -95,9 +112,11 @@
                 <text class="activity-info">{{item.time}}</text>
                 <text class="activity-info">{{item.reads}}</text>
             </view>
-            <navigator url="/pages/farmEX/farmEX">
-                <image class="activity-image" src="{{item.image}}"></image>
-            </navigator>
+            <view class="activity-image-container"> 
+                <navigator url="/pages/farmEX/farmEX" bindtap="incrementReads(index)">
+                    <image class="activity-image" src="{{item.image}}"></image>
+                </navigator>
+            </view>
         </view>
     </block>
 </view>

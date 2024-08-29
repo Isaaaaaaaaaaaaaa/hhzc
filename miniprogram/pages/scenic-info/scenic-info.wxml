@@ -1,0 +1,35 @@
+<!--pages/scenic-info/scenic-info.wxml-->
+<view class="deco"></view>
+
+<view class="search-bar">
+  <view class="search-container">
+    <view class="search-img-container">
+      <image src="/images/search.png"/>
+    </view>
+    <input class="search-input" placeholder="请输入景点名称" />
+    <view class="search-img-container">
+      <image src="/images/pulldown.png"/>
+    </view>
+  </view>
+</view>
+
+<view class="deco2"></view>
+
+<view class="scenic-list">
+  <block wx:for="{{scenicItems}}" wx:key="name">
+    <view class="scenic-item">
+      <image class="scenic-image" src="{{item.image}}"></image>
+      <view class="scenic-info">
+        <text class="scenic-name">{{item.name}}</text>
+        <view class="scenic-location">
+          <image class="location-icon" src="/images/scene-locate.png"></image>
+          <text>{{item.location}}</text>
+        </view>
+        <view class="rating">
+          <view class="stars">{{item.stars}}</view>
+          <text class="rating-score">满意度{{item.rating}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
